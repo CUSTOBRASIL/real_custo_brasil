@@ -93,6 +93,58 @@
         .anti-fascism strong {
             color: #ff4500;
         }
+         /* Estilos básicos */
+       
+
+         .social-buttons {
+            display: flex;
+            flex-direction: column; /* Alinha os botões na vertical */
+            gap: 20px; /* Espaçamento entre os botões */
+            align-items: center; /* Centraliza os botões */
+        }
+
+        .social-buttons a {
+            display: block;
+            width: 60px; /* Tamanho fixo para os ícones */
+            height: 60px;
+            border-radius: 50%; /* Botões circulares */
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            transition: transform 0.3s ease-in-out; /* Animação de transformação */
+            text-align: center;
+        }
+
+        .social-buttons img {
+            width: 50px; /* Tamanho da imagem dentro do botão */
+            height: 50px;
+            object-fit: contain;
+            margin-top: 5px;
+        }
+
+        .whatsapp {
+            background-color: #25D366;
+        }
+
+        .linkedin {
+            background-color: #0077B5;
+        }
+
+        .facebook {
+            background-color: #1877F2;
+        }
+
+        .twitter {
+            background-color: #1DA1F2;
+        }
+
+        .social-buttons a:hover {
+            transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+        }
+        @media (max-width: 600px) {
+            .social-buttons {
+                gap: 15px; /* Menor espaçamento em telas pequenas */
+            }
+        }
     </style>
 </head>
 <body>
@@ -152,9 +204,26 @@
             <li><a href="RS_EST.html">Governo Do Rio Grande do Sul</a></li>
         </ul>
         <h3><span>Lucro Privado e Prejuizo do Trabalhador e Pequeno Emprendedor?</span></h3>
+        <h3><span>Caso possivel compartilhe nas redes sociais</span></h3>
+        <div class="social-buttons">
+          <a href="https://wa.me/?text=Confira%20este%20site%20https%3A%2F%2Fcustobrasil.github.io%2Freal_custo_brasil%2F" class="whatsapp-button" target="_blank">
+            <img src="whatsapp.png" alt="Compartilhar no WhatsApp">
+        </a>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://custobrasil.github.io/real_custo_brasil/" class="linkedin" target="_blank">
+              <img src="linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://custobrasil.github.io/real_custo_brasil/" class="facebook" target="_blank">
+              <img src="facebook.png" alt="Facebook">
+          </a>
+          <a href="https://twitter.com/intent/tweet?url=custobrasil.github.io/real_custo_brasil/&text=Texto%20para%20compartilhar" class="twitter" target="_blank">
+              <img src="twitter.png" alt="Twitter">
+          </a>
+      </div>
+  
         <div class="auditoria">
             <a href="auditoria.html">→ Auditoria do Jupyter Notebook para nerds</a>
         </div>
+        
     </div>
 </body>
     <!-- Google tag (gtag.js) -->
